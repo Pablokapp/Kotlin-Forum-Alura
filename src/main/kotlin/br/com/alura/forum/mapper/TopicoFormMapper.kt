@@ -10,10 +10,10 @@ import br.com.alura.forum.model.Topico
 class TopicoFormMapper(
     private val cursoService: CursoService,
     private val usuarioService: UsuarioService,
-): Mapper<NovoTopicoForm, Topico> {
+) : Mapper<NovoTopicoForm, Topico> {
 
     override fun map(t: NovoTopicoForm): Topico {
-       return Topico(
+        return Topico(
 
             titulo = t.titulo,
             mensagem = t.mensagem,
